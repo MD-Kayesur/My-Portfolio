@@ -1,37 +1,85 @@
 import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
-
-  
+import Button from "./Button";
 
 const Navbar = () => {
- 
-  
   const navlink = (
     <>
-      <div className="font-semibold md:flex text-black md:text-white items-center">
-        <li>
-          <Link to="top" smooth={true} duration={500} offset={-70}>Home</Link>
+      <div className="font-semibold md:flex    text-white items-center">
+        {/* <li>
+          <details>
+            <summary>Parent</summary>
+            <ul className="p-2">
+              <li>
+                <a>Submenu 1</a>
+              </li>
+              <li>
+                <a>Submenu 2</a>
+              </li>
+            </ul>
+          </details>
+        </li> */}
+
+        <li className="  ">
+          <details>
+          <summary>home</summary>
+          <ul className="  absolute w-[00px] ml-42">
+              <li>
+                <Link to="top" smooth={true} duration={500} offset={-70}>
+              <Button button="home"></Button>
+            </Link>
+              </li>
+              <li>
+              <Link to="Intro" smooth={true} duration={500} offset={-70}>
+            <Button button="intro"></Button>
+          </Link>
+              </li>
+              <li>
+          <Link to="About" smooth={true} duration={500} offset={-70}>
+            <Button button="about"></Button>
+          </Link>
         </li>
         <li>
-          <Link to="Intro" smooth={true} duration={500} offset={-70}>Intro</Link>
+          <Link to="Skill" smooth={true} duration={500} offset={-70}>
+            <Button button="skill"></Button>
+          </Link>
+        </li>
+        
+        <li className="w-[130px] ">
+          <Link to="casestudy" smooth={true} duration={500} offset={-70}>
+            <Button button="case Study"></Button>
+          </Link>
+        </li>
+            </ul>
+          
+          </details>
         </li>
         <li>
-          <Link to="About" smooth={true} duration={500} offset={-70}>About</Link>
-        </li>
+                <NavLink className='primary-button ' to="/about" >
+               about
+            </NavLink>
+              </li>
+        {/* <li>
+                <NavLink to="/about" >
+               about
+            </NavLink>
+              </li>
         <li>
-          <Link to="Skill" smooth={true} duration={500} offset={-70}>Skill</Link>
-        </li>
+                <NavLink to="/about" >
+               about
+            </NavLink>
+              </li>
         <li>
-          <Link to="casestudy" smooth={true} duration={500} offset={-70}>Case Study</Link>
-        </li>
+                <NavLink to="/about" >
+               about
+            </NavLink>
+              </li> */}
        
-         
-         
       </div>
     </>
   );
   return (
-    <div className="navbar px-10    md:full  rounded-2xl bg-base-100 shadow-sm backdrop-blur-lg   z-50 fixed border-b-red-100 border-b-2  bg-gradient-to-r from-blue-500 to-purple-500 text-white">
+    <div className="navbar px-10    md:full  rounded-2xl   shadow-sm backdrop-blur-lg  bg-[#0D1A43] z-50 fixed border-b-red-100 border-b-2  text-white">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -52,13 +100,12 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+            className="menu menu-sm dropdown-content bg-black  rounded-box z-1 mt-3 w-52 p-2 shadow">
             {navlink}
-          
           </ul>
         </div>
         <div className="flex  gap-2 items-center">
-          <img className="h-15 rounded-4xl w-15" src={ ''} alt="img" />
+          <img className="h-15 rounded-4xl w-15" src={""} alt="img" />
           <a className="font-semibold nd:text-xl uppercase">MD.Kayesur</a>
         </div>
       </div>
@@ -67,8 +114,6 @@ const Navbar = () => {
         <div className="  hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navlink}</ul>
         </div>
-
-        
       </div>
     </div>
   );

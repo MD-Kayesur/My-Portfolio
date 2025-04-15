@@ -1,6 +1,6 @@
 // src/components/StudentyIntro.jsx
 
-// import React from 'react';
+import React from 'react';
 import profilePic from '../images/0b7fb41a-3019-4644-b657-c8f76a91b6f4.jpeg'; // Replace with your actual image
 
 const StudentyIntro = () => {

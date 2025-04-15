@@ -1,23 +1,19 @@
-@import "tailwindcss";
-@plugin "daisyui";
+import React from 'react';
+import styled from 'styled-components';
 
+const Button = ({button}) => {
+  return (
+    <StyledWrapper>
+      <div className="button-borders">
+        <button className="primary-button py-2 px-3   rounded-t-3xl rounded-r-3xl">  {button}
+        </button>
+      </div>
+    </StyledWrapper>
+  );
+}
 
-/* .nav-link {
-    color: black;
-    text-decoration: none;
-    padding: 10px;
-  }
-  
-  :hover.nav-link {
-    color: red;
-  } */
-  .navbar a.active {
-    color: red; /* Blue color for active link */
-    font-weight: bold;
-  }
-
-
-    .primary-button {
+const StyledWrapper = styled.div`
+  .primary-button {
    font-family: 'Ropa Sans', sans-serif;
       /* font-family: 'Valorant', sans-serif; */
    color: white;
@@ -73,3 +69,40 @@
    right: -1px;
    transition: background-color 0.15s ease-in-out;
   }
+
+  .button-borders {
+   position: relative;
+   width: fit-content;
+   height: fit-content;
+  }
+
+  .button-borders:before {
+   content: "";
+   position: absolute;
+   width: calc(100% + 0.5em);
+   height: 50%;
+   left: -0.3em;
+   top: -0.3em;
+   border: 1px solid #0E1822;
+   border-bottom: 0px;
+      /* opacity: 0.3; */
+  }
+
+  .button-borders:after {
+   content: "";
+   position: absolute;
+   width: calc(100% + 0.5em);
+   height: 50%;
+   left: -0.3em;
+   bottom: -0.3em;
+   border: 1px solid #0E1822;
+   border-top: 0px;
+      /* opacity: 0.3; */
+   z-index: 0;
+  }
+
+  .shape {
+   fill: #0E1822;
+  }`;
+
+export default Button;
