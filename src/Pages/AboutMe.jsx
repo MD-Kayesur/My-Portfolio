@@ -2,7 +2,7 @@ import React from "react";
 import myImage from "../images/0b7fb41a-3019-4644-b657-c8f76a91b6f4.jpeg"; // Your image path
   const AboutMe = () => {
   return (
-    <div     className="bg-[#0D1A43] text-white py-16 px-6 md:px-20 relative overflow-hidden">
+    <div     className="min-h-screen bg-[#0D1A43] text-white py-16 px-6 md:px-20 relative overflow-hidden">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* Left Image Section */}
         <div className="relative">
@@ -11,19 +11,31 @@ import myImage from "../images/0b7fb41a-3019-4644-b657-c8f76a91b6f4.jpeg"; // Yo
           <img
             src={myImage}
             alt="About me"
-            className="w-[300px] md:w-[350px] z-10 relative rounded-xl object-cover shadow-lg"
+            className="w-[250px] md:w-[500px] z-10 relative rounded-xl object-cover shadow-lg"
           />
         </div>
 
         {/* Right Text Section */}
+        <div>
+          <div className=" grid md:grid-cols-3 gap-3  pb-7">
+            <div> <h2 className="text-3xl font-bold">Birth Date</h2>
+            <h2 className="text-xl">20 December 2002</h2></div>
+ 
+            <div> <h2 className="text-3xl font-bold">Nationality</h2>
+            <h2 className="text-xl">Bangladesh</h2></div>
+ 
+            <div> <h2 className="text-3xl font-bold">Location</h2>
+            <h2 className="text-xl">Dhaka City ,Bangladesh</h2></div>
+ 
+          </div>
         <div className="text-left z-10">
           <h2 className="text-4xl font-bold mb-6">About Me</h2>
-          <p className="text-gray-300 mb-4 max-w-xl">
-            This is a sample text. Insert your desired text here. Insert your desired text here. This is a sample text.
-          </p>
-          <p className="text-gray-300 max-w-xl">
-            This is a sample text. Insert your desired text here. Insert your desired text here. This is a sample text.
-          </p>
+          <p className="text-white mt-3 leading-relaxed">
+    Currently looking for a position in the <span className="font-bold text-yellow-400">IT industry</span> where I can apply my knowledge, learn from real-world experience, and grow as a developer. I'm also continuously learning modern frameworks and tools like 
+    <span className="font-medium"> Next.js, Firebase, and Git</span>.
+  </p>
+           
+        </div>
         </div>
       </div>
     </div>

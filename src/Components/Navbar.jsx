@@ -1,80 +1,91 @@
 import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
 import Button from "./Button";
-
+import img from "../images/0b7fb41a-3019-4644-b657-c8f76a91b6f4.jpeg";
 const Navbar = () => {
   const navlink = (
     <>
-      <div className="font-semibold md:flex    text-white items-center">
+      <div className="font-semibold md:flex text-black md:text-white items-center">
         {/* <li>
-          <details>
-            <summary>Parent</summary>
-            <ul className="p-2">
-              <li>
-                <a>Submenu 1</a>
-              </li>
-              <li>
-                <a>Submenu 2</a>
-              </li>
-            </ul>
-          </details>
+          <Link
+            to="top"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            spy={true}
+            activeClass="active">
+            <Button
+              button="home"
+              className=" rounded-md transition-all duration-300 active:bg-red-500"></Button>
+          </Link>
         </li> */}
 
-        <li className="  ">
-          <details>
-          <summary>home</summary>
-          <ul className="  absolute w-[00px] ml-42">
-              <li>
-                <Link to="top" smooth={true} duration={500} offset={-70}>
-              <Button button="home"></Button>
-            </Link>
-              </li>
-              <li>
-              <Link to="Intro" smooth={true} duration={500} offset={-70}>
-            <Button button="intro"></Button>
+        <li>
+          <Link
+            to="Intro"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            spy={true}
+            activeClass="active">
+            <Button
+              button="intro"
+              className=" rounded-md transition-all duration-300 active:bg-red-500"></Button>
           </Link>
-              </li>
-              <li>
-          <Link to="About" smooth={true} duration={500} offset={-70}>
-            <Button button="about"></Button>
+        </li>
+
+        <li>
+          <Link
+            to="About"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            spy={true}
+            activeClass="active">
+            <Button
+              button="about"
+              className=" rounded-md transition-all duration-300 active:bg-red-500"></Button>
           </Link>
         </li>
         <li>
-          <Link to="Skill" smooth={true} duration={500} offset={-70}>
-            <Button button="skill"></Button>
+          <Link
+            to="Skill"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            spy={true}
+            activeClass="active">
+            <Button
+              button="skill"
+              className=" rounded-md transition-all duration-300 active:bg-red-500"></Button>
           </Link>
         </li>
-        
-        <li className="w-[130px] ">
-          <Link to="casestudy" smooth={true} duration={500} offset={-70}>
-            <Button button="case Study"></Button>
+        <li>
+          <Link
+            to="Projects"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            spy={true}
+            activeClass="active">
+            <Button
+              button="My Projects"
+              className="rounded-md transition-all duration-300 active:bg-red-500"></Button>
           </Link>
         </li>
-            </ul>
-          
-          </details>
+        <li>
+          <Link
+            to="casestudy"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            spy={true}
+            activeClass="active">
+            <Button
+              button="case Study"
+              className="rounded-md transition-all duration-300 active:bg-red-500"></Button>
+          </Link>
         </li>
-        <li>
-                <NavLink className='primary-button ' to="/about" >
-               about
-            </NavLink>
-              </li>
-        {/* <li>
-                <NavLink to="/about" >
-               about
-            </NavLink>
-              </li>
-        <li>
-                <NavLink to="/about" >
-               about
-            </NavLink>
-              </li>
-        <li>
-                <NavLink to="/about" >
-               about
-            </NavLink>
-              </li> */}
-       
       </div>
     </>
   );
@@ -100,12 +111,12 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-black  rounded-box z-1 mt-3 w-52 p-2 shadow">
+            className="menu menu-sm dropdown-content   rounded-box z-1 mt-3 w-52 p-2 shadow">
             {navlink}
           </ul>
         </div>
         <div className="flex  gap-2 items-center">
-          <img className="h-15 rounded-4xl w-15" src={""} alt="img" />
+          <img className="h-15 rounded-4xl w-15" src={img} alt="img" />
           <a className="font-semibold nd:text-xl uppercase">MD.Kayesur</a>
         </div>
       </div>

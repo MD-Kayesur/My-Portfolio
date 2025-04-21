@@ -3,7 +3,7 @@ import { FaGlobe, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 
 const ThanksYou = () => {
   return (
-    <div className="bg-[#0D1A43] text-white px-6 md:px-20 py-16 relative overflow-hidden">
+    <div className="min-h-screen bg-[#0D1A43] text-white px-6 md:px-20 py-16 relative overflow-hidden">
       <div className="text-center mb-10">
         <h2 className="text-4xl font-bold">THANK YOU</h2>
         <p className="text-gray-300 mt-4">

@@ -1,43 +1,60 @@
 import React from "react";
-import Image from "../images/0b7fb41a-3019-4644-b657-c8f76a91b6f4.jpeg"; // If you're using Next.js, otherwise use <img />
+import Image from "../images/screencapture-car-.png"; // If you're using Next.js, otherwise use <img />
+import Image2 from "../images/screencapture-building-manegment-web-app-2025-04-16-00_55_03.png"; // If you're using Next.js, otherwise use <img />
+import { Link } from "react-router-dom";
+import Header from "../Components/Header";
 
 export default function Mission() {
   return (
-    <div className="min-h-screen bg-[#1a1d52] text-white px-8 py-12 grid md:grid-cols-2 gap-12 items-center">
+    <>
+ <Header title={'My Projects'}></Header>
+
+    <div className="min-h-screen bg-[#1a1d52] text-white px-8 py-12 grid md:grid-cols-3 gap-12 items-center">
+   
       <div>
-        <h2 className="text-4xl font-bold mb-4">Mission</h2>
-        <p className="text-sm mb-4">
-          This is a sample text. Insert your desired text here. Insert your desired text here. This is a sample text.
-        </p>
-        <p className="text-sm">
-          This is a sample text. Insert your desired text here. Insert your desired text here. This is a sample text. This is a sample text.
-        </p>
+        <h2 className="text-4xl font-bold  mb-4">car-swift</h2>
+        <a className="underline" href="https://car-swift.web.app" target="_blank" rel="noopener noreferrer">
+  Visit my website
+</a>
+
+         
         <div className="mt-8">
-          <div className="w-64 h-64 rounded-full overflow-hidden clip-path-custom">
+          <div className="w-64 h-64 rounded-full  clip-path-custom">
+            <a  href="https://i.ibb.co.com/9k9s5qND/screencapture-car.png">
+
             <img
               src={Image}
               alt="Mission"
-              className="w-full h-full object-cover"
-            />
+              className="w-full rounded-full  h-full object-cover"
+              />
+              </a>
           </div>
         </div>
       </div>
+      {/* <div className="absolute bottom-[20px] right-[20px] w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center"> */}
 
+      <div className="  -rotate-30 w-full h-1 bg-cyan-500 transform skew-x-260"></div>
+      
+      
+
+  
       <div className="text-right">
         <div className="w-64 h-64 ml-auto mb-8 rounded-full overflow-hidden clip-path-custom">
+          <a href="https://i.ibb.co.com/N2m9cHB0/screencapture-building-manegment-web-app-2025-04-16-00-55-03.png">
+          {/* <a href="https://building-manegment.web.app/"> */}
+
           <img
-            src= {Image}
+            src= {Image2}
             alt="Vision"
             className="w-full h-full object-cover"
-          />
+            />
+            </a>
         </div>
-        <h2 className="text-4xl font-bold mb-4">Vision</h2>
-        <p className="text-sm mb-4">
-          This is a sample text. Insert your desired text here. Insert your desired text here. This is a sample text.
-        </p>
-        <p className="text-sm">
-          This is a sample text. Insert your desired text here. Insert your desired text here. This is a sample text. This is a sample text.
-        </p>
+        <h2 className="text-4xl font-bold mb-4">building-manegment</h2>
+        <a className="underline" href="https://building-manegment.web.app/" target="_blank" rel="noopener noreferrer">
+  Visit my website
+</a>
+         
       </div>
 
       <style jsx>{`
@@ -46,5 +63,6 @@ export default function Mission() {
         }
       `}</style>
     </div>
+    </>
   );
 }

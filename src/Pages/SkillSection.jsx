@@ -1,11 +1,11 @@
 import React from "react";
 
 const skills = [
-  { name: "Skill 01", level: 90, color: "bg-green-500" },
-  { name: "Skill 02", level: 85, color: "bg-yellow-400" },
-  { name: "Skill 03", level: 70, color: "bg-cyan-400" },
-  { name: "Skill 04", level: 75, color: "bg-red-500" },
-  { name: "Skill 05", level: 60, color: "bg-indigo-500" },
+  { name: "Html", level: 90, color: "bg-green-500" },
+  { name: "Css", level: 85, color: "bg-yellow-400" },
+  { name: "JS", level: 70, color: "bg-cyan-400" },
+  { name: "React", level: 75, color: "bg-red-500" },
+  { name: "NextJs", level: 60, color: "bg-indigo-500" },
 ];
 
 export default function SkillSection() {

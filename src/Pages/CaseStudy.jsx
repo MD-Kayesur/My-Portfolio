@@ -2,7 +2,7 @@ import React from "react";
 import img from '../images/0b7fb41a-3019-4644-b657-c8f76a91b6f4.jpeg'
  const CaseStudy = () => {
   return (
-    <div  className="bg-[#0D1A43] text-white py-16 px-6 md:px-20 relative overflow-hidden">
+    <div  className="min-h-screen bg-[#0D1A43] text-white py-16 px-6 md:px-20 relative overflow-hidden">
       <h2 className="text-4xl font-bold mb-12 text-white">Case Study</h2>
 
       <div className="flex flex-col md:flex-row items-center gap-10 relative">

@@ -1,20 +1,27 @@
 // src/components/StudentyIntro.jsx
 
-import React from 'react';
-import profilePic from '../images/0b7fb41a-3019-4644-b657-c8f76a91b6f4.jpeg'; // Replace with your actual image
+import React from "react";
+import profilePic from "../images/0b7fb41a-3019-4644-b657-c8f76a91b6f4.jpeg"; // Replace with your actual image
 
 const StudentyIntro = () => {
   return (
-    <div className="min-h-screen bg-[#0D1A43] flex items-center justify-center px-4">
+    <div className=" min-h-screen bg-[#0D1A43] flex items-center justify-center px-4 py-10">
       <div className="text-white max-w-5xl w-full flex flex-col md:flex-row items-center justify-between gap-6">
-        
         {/* Text Area */}
         <div className="space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold">
-            <span className="text-yellow-400">STUDENT</span> <br />
-            <span className="text-white">INTRO SLIDE</span>
+            <span className="text-yellow-400">MD</span> <br />
+            <span className="text-white">KAYESUR</span>
           </h1>
-          <p className="text-lg">John Doe</p>
+
+          <p>
+            "Passionate about building clean UI with React." "Turning ideas into
+            responsive web experiences."
+          </p>
+          <h2 className="text-2xl text-tomato-400">Graphic Designer, UI/UX Engineer</h2>
+          <button className="btn bg-blue-300">DownLoad CV</button>
+
+
         </div>
 
         {/* Image */}
