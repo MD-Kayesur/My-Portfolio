@@ -30,13 +30,17 @@ A personal portfolio website built with **React**, **Tailwind CSS**, and modern 
 ![Portfolio Screenshot](./public/screenshot.png)
 
 ---
+## (https://reactrouter.com/_brand/react-router-stacked-color.png)  using React Router
 
 ## 🚀 Getting Started
 
 Clone the project and install dependencies:
 
-```bash
-git clone https://github.com/yourusername/my-portfolio.git
+npm create vite@latest my-portfolio -- --template react
+# follow prompts
 cd my-portfolio
 npm install
+npm install react-router-dom # always need this!
+npm install localforage match-sorter sort-by # only for this tutorial.
+
 npm run dev
