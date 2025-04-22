@@ -38,20 +38,31 @@ A personal portfolio website built with **React**, **Tailwind CSS**, and modern 
 # follow prompts
 
 # Create the project and install dependencies: 
-
+```bash
 npm create vite@latest my-portfolio -- --template react 
 cd my-portfolio
 npm install
-npm install react-router-dom # always need this!
-npm install localforage match-sorter sort-by # only for this tutorial.
+npm install react-router-dom  
+npm install localforage match-sorter sort-by 
+```bash 
 # Add daisyui
+```bash
 npm i -D daisyui@latest
+```
 # Add tailwindcss
+```bash
 npm install tailwindcss @tailwindcss/vite
+```
 #  install react "typed.js"
+```bash
 npm install typed.js
+```
 #  install react  icons
+```bash
  npm install react-icons
+ ```
  #  install react  scroll
+ ```bash
  npm install react-scroll  
 npm run dev
+ ```
