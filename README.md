@@ -27,7 +27,7 @@ A personal portfolio website built with **React**, **Tailwind CSS**, and modern 
 
 ## 📸 Screenshots
 
-![Portfolio Screenshot](./public/screenshot.png)
+![Portfolio Screenshot](./public/my%20poetgolio.png)
 
 ---
 
@@ -44,7 +44,7 @@ cd my-portfolio
 npm install
 npm install react-router-dom  
 npm install localforage match-sorter sort-by 
-```bash 
+```
 # Add daisyui
 ```bash
 npm i -D daisyui@latest
