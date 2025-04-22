@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
 import Button from "./Button";
+ 
 import img from "../images/0b7fb41a-3019-4644-b657-c8f76a91b6f4.jpeg";
 const Navbar = () => {
   const navlink = (
@@ -117,7 +118,11 @@ const Navbar = () => {
         </div>
         <div className="flex  gap-2 items-center">
           <img className="h-15 rounded-4xl w-15" src={img} alt="img" />
-          <a className="font-semibold nd:text-xl uppercase">MD.Kayesur</a>
+
+ 
+
+
+          <h2 className="font-semibold nd:text-xl uppercase animated-gradient font-">MD.Kayesur</h2>
         </div>
       </div>
 

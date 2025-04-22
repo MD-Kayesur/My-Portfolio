@@ -1,9 +1,28 @@
 // src/components/StudentyIntro.jsx
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import profilePic from "../images/0b7fb41a-3019-4644-b657-c8f76a91b6f4.jpeg"; // Replace with your actual image
-
+import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { Button, Link } from "react-scroll";
+import Typed from "typed.js";
 const StudentyIntro = () => {
+  const el = useRef(null); // reference to the span element
+  const typed = useRef(null); // reference to Typed instance
+
+  useEffect(() => {
+    typed.current = new Typed(el.current, {
+      strings: ["Web Developer", "Youtuber", "Crazy Boy"],
+      typeSpeed: 100,
+      backSpeed: 50,
+      loop: true,
+    });
+
+    return () => {
+      // Destroy instance on unmount to prevent memory leaks
+      typed.current.destroy();
+    };
+  }, []);
+
   return (
     <div className=" min-h-screen bg-[#0D1A43] flex items-center justify-center px-4 py-10">
       <div className="text-white max-w-5xl w-full flex flex-col md:flex-row items-center justify-between gap-6">
@@ -15,13 +34,39 @@ const StudentyIntro = () => {
           </h1>
 
           <p>
-            "Passionate about building clean UI with React." "Turning ideas into
-            responsive web experiences."
+            Front-End Developer crafting high-performance, responsive, and
+            user-friendly web applications using modern technologies, clean
+            code, and best practices for seamless user experiences.
           </p>
-          <h2 className="text-2xl text-tomato-400">Graphic Designer, UI/UX Engineer</h2>
-          <button className="btn bg-blue-300">DownLoad CV</button>
+          <h2 className="text-2xl text-tomato-400 font-bold ">
+         i am  <span ref={el}></span> 
+          </h2>
+           {/* Front-End Developer | Freelancer */}
+          <div className="flex items-center gap-3">
+            <a
+              href="../../public/CURRICULUM VITAE.docx"
+              download="My_Resume.docx"
+              className="">
+             <button className="btn btn-info"> Download CV</button>
+            </a>
 
+ 
 
+            <a className="text-3xl" href="https://x.com/Md_Kayesur">
+              {" "}
+              <FaXTwitter></FaXTwitter>{" "}
+            </a>
+            <a
+              className="text-3xl"
+              href="https://www.linkedin.com/in/md-kayesur-rahman-212759317/">
+              {" "}
+              <FaLinkedin></FaLinkedin>{" "}
+            </a>
+            <a className="text-3xl" href="https://github.com/MD-Kayesur">
+              {" "}
+              <FaGithub></FaGithub>{" "}
+            </a>
+          </div>
         </div>
 
         {/* Image */}

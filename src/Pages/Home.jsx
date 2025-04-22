@@ -17,6 +17,7 @@ import Button from "../Components/Button";
 import CV from "./CV";
 import { Link } from "react-scroll";
 import { FaArrowUp } from "react-icons/fa";
+import { Copy } from "lucide-react";
   
  
 
@@ -51,6 +52,7 @@ const Home = () => {
            <section id='casestudy'> <CaseStudy></CaseStudy></section>
       <section>      <ThanksYou></ThanksYou></section>
 
+ {/* <Copy></Copy> */}
       <div className="mt-7">
         <CV></CV>
       </div>

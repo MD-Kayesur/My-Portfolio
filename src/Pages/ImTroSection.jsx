@@ -10,6 +10,8 @@ const sections = [
   { title: "Language", description: "This is a sample text." },
 ];
 
+
+
 const ImTroSection = () => {
   return (
     <div className="min-h-screen bg-[#0D1A43] text-white py-16 px-6 md:px-20">

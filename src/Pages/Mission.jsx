@@ -7,14 +7,14 @@ import Header from "../Components/Header";
 export default function Mission() {
   return (
     <>
- <Header title={'My Projects'}></Header>
+ <Header title={'My Latest Projects'}></Header>
 
     <div className="min-h-screen bg-[#1a1d52] text-white px-8 py-12 grid md:grid-cols-3 gap-12 items-center">
    
       <div>
         <h2 className="text-4xl font-bold  mb-4">car-swift</h2>
         <a className="underline" href="https://car-swift.web.app" target="_blank" rel="noopener noreferrer">
-  Visit my website
+  Visit the website
 </a>
 
          
@@ -52,7 +52,7 @@ export default function Mission() {
         </div>
         <h2 className="text-4xl font-bold mb-4">building-manegment</h2>
         <a className="underline" href="https://building-manegment.web.app/" target="_blank" rel="noopener noreferrer">
-  Visit my website
+  Visit the website
 </a>
          
       </div>
