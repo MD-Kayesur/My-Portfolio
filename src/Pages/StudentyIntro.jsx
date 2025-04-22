@@ -11,7 +11,7 @@ const StudentyIntro = () => {
 
   useEffect(() => {
     typed.current = new Typed(el.current, {
-      strings: ["Web Developer", "Youtuber", "Crazy Boy"],
+      strings: ["FrontEnd Developer", "Youtuber", "Crazy Boy"],
       typeSpeed: 100,
       backSpeed: 50,
       loop: true,

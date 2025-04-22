@@ -27,7 +27,7 @@ A personal portfolio website built with **React**, **Tailwind CSS**, and modern 
 
 ## 📸 Screenshots
 
-![Portfolio Screenshot](./public/my%20poetgolio.png)
+![Portfolio Screenshot](./public/Screenshot_6.png)
 
 ---
 
