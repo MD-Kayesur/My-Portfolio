@@ -122,7 +122,7 @@ const Navbar = () => {
  
 
 
-          <h2 className="font-semibold nd:text-xl uppercase animated-gradient font-">MD.Kayesur</h2>
+          <h2 className="font-semibold nd:text-xl uppercase animated-gradient font-mono">MD.Kayesur</h2>
         </div>
       </div>
 

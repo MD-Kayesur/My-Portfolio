@@ -5,10 +5,21 @@ import profilePic from "../images/0b7fb41a-3019-4644-b657-c8f76a91b6f4.jpeg"; //
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { Button, Link } from "react-scroll";
 import Typed from "typed.js";
+// import { useScatter } from "../Hook/useScatter";
+ 
 const StudentyIntro = () => {
   const el = useRef(null); // reference to the span element
   const typed = useRef(null); // reference to Typed instance
-
+//  const text=<>
+//  <div>
+//          <h1 className="text-4xl md:text-5xl font-bold">
+//             <span className="text-yellow-400">MD</span> <br />
+//             <span className="text-white">KAYESUR</span>
+//           </h1>
+//          </div></>
+  // const text='kayesur'
+  // const { scattered, setIsHovered } = useScatter(text);
+  // console.log(scattered)
   useEffect(() => {
     typed.current = new Typed(el.current, {
       strings: ["FrontEnd Developer", "Youtuber", "Crazy Boy"],
@@ -28,10 +39,20 @@ const StudentyIntro = () => {
       <div className="text-white max-w-5xl w-full flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Text Area */}
         <div className="space-y-4">
-          <h1 className="text-4xl md:text-5xl font-bold">
+         <div>
+         <h1 className="text-4xl md:text-5xl font-bold">
             <span className="text-yellow-400">MD</span> <br />
             <span className="text-white">KAYESUR</span>
           </h1>
+         </div>
+        
+          {/* <div
+      className="flex gap-1 text-3xl font-bold cursor-pointer  "
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {scattered}
+    </div> */}
 
           <p>
             Front-End Developer crafting high-performance, responsive, and
@@ -44,7 +65,7 @@ const StudentyIntro = () => {
            {/* Front-End Developer | Freelancer */}
           <div className="flex items-center gap-3">
             <a
-              href="../../public/CURRICULUM VITAE.docx"
+              href="../../public/MD.CV.docx"
               download="My_Resume.docx"
               className="">
              <button className="btn btn-info"> Download CV</button>

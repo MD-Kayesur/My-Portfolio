@@ -1,4 +1,7 @@
-import React from 'react';
+ 
+
+
+import React from "react";
 
 const CV = () => {
   return (
@@ -7,138 +10,148 @@ const CV = () => {
         CURRICULUM VITAE
       </div>
 
+      {/* Header Section */}
       <div className="flex justify-between items-start">
         <div>
-          <h1 className="text-xl font-bold">MD. AL AMIN</h1>
-          <p><strong>C/O:</strong> MD MIJANUR RAHMAN</p>
-          <p><strong>Address:</strong> Vill: Khosalkhali</p>
-          <p>P.O: Kazamtala, P.S: Shyamnagar, Dist: Satkhira</p>
-          <p><strong>Cell:</strong> +8801995-138394</p>
-          <p><strong>E-mail:</strong> <a href="mailto:mdalaminhasan53@gmail.com" className="text-blue-600">mdalaminhasan53@gmail.com</a></p>
+          <h1 className="text-2xl font-bold">MD. KAYESUR</h1>
+          <p>
+            <strong>Phone:</strong> +8801926360430
+          </p>
+          <p>
+            <strong>Email:</strong>{" "}
+            <a href="mailto:rmdkayesur@gmail.com" className="text-blue-600">
+              rmdkayesur@gmail.com
+            </a>
+          </p>
+          <p>
+            <strong>Address:</strong> Vill: Khosalkhali, P.O: Kazamtala, P.S:
+            Shyamnagar, Dist: Satkhira
+          </p>
         </div>
         <img
-          src="/profile.jpg" // Replace with actual path to the image
+          src="/profile.jpg" // Change with actual image path
           alt="Profile"
           className="w-24 h-28 object-cover border"
         />
       </div>
 
+      {/* Career Objective */}
       <section className="mt-6">
-        <h2 className="font-bold text-lg border-b border-black mb-2">Career Profile:</h2>
+        <h2 className="font-bold text-lg border-b border-black mb-2">
+          Career Objective:
+        </h2>
         <p>
-          Proactive, energetic sales professional offering hands-on experience in sales and execution
-          along with a unique ability to work towards set sales goals of the company and creating
-          sales techniques to enter into new markets. Currently looking for a position in an environment
-          that offers me a greater challenge, increased benefits for my career, and the opportunity
-          to help the company advance efficiently and productively.
+          Highly motivated and self-taught <strong>Frontend Developer</strong>{" "}
+          with a strong foundation in HTML, CSS, JavaScript, and React.js.
+          Seeking a challenging role to apply technical skills, creativity, and
+          passion for building responsive, user-friendly web applications.
         </p>
       </section>
 
+      {/* Skills */}
       <section className="mt-6">
-        <h2 className="font-bold text-lg border-b border-black mb-2">Academic Qualification:</h2>
+        <h2 className="font-bold text-lg border-b border-black mb-2">
+          Skills:
+        </h2>
+        <ul className="list-disc pl-5">
+          <li>HTML5, CSS3, Tailwind CSS, Bootstrap 5</li>
+          <li>JavaScript (ES6+), React.js, Next.js (basic)</li>
+          <li>Responsive Web Design</li>
+          <li>Version Control: Git & GitHub</li>
+          <li>Basic knowledge of APIs and JSON</li>
+          <li>Problem-solving and debugging skills</li>
+        </ul>
+      </section>
 
+      {/* Academic Qualification */}
+      <section className="mt-6">
+        <h2 className="font-bold text-lg border-b border-black mb-2">
+          Academic Qualifications:
+        </h2>
         <div className="mb-4">
-          <h3 className="font-semibold">Higher Secondary School Certificate (H.S.C):</h3>
+          <h3 className="font-semibold">
+            Higher Secondary School Certificate (HSC):
+          </h3>
           <ul className="list-disc pl-5">
-            <li><strong>Institution:</strong> Munshiganj Degree College</li>
-            <li><strong>Department:</strong> Humanities</li>
-            <li><strong>Passing Year:</strong> 2022</li>
-            <li><strong>Board:</strong> Jashore</li>
-            <li><strong>Result:</strong> GPA 4.86 (Out of scale 5)</li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 className="font-semibold">Secondary School Certificate (S.S.C):</h3>
-          <ul className="list-disc pl-5">
-            <li><strong>Institution:</strong> Abad Chandipur High School</li>
-            <li><strong>Department:</strong> Humanities</li>
-            <li><strong>Passing Year:</strong> 2020</li>
-            <li><strong>Board:</strong> Jashore</li>
-            <li><strong>Result:</strong> GPA 4.56 (Out of scale 5)</li>
+            <li>Institution: Munshiganj Degree College</li>
+            <li>Department: Humanities</li>
+            <li>Passing Year: 2022</li>
+            <li>Board: Jashore</li>
+            <li>Result: GPA 4.86</li>
           </ul>
         </div>
       </section>
 
+      {/* Projects */}
       <section className="mt-6">
-        <h2 className="font-bold text-lg border-b border-black mb-2">Job Experience:</h2>
+        <h2 className="font-bold text-lg border-b border-black mb-2">
+          Projects:
+        </h2>
         <ul className="list-disc pl-5">
+          <li>Portfolio Website - Built with React.js and Tailwind CSS</li>
+          <li>Landing Page Clone - Responsive website using Tailwind CSS</li>
+          <li>Todo App - A simple Todo application using React.js</li>
+        </ul>
+      </section>
+
+      {/* Computer Literacy */}
+      <section className="mt-6">
+        <h2 className="font-bold text-lg border-b border-black mb-2">
+          Computer Literacy:
+        </h2>
+        <ul className="list-disc pl-5">
+          <li>Frontend Development Tools</li>
+          <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+          <li>Internet browsing and Email communication</li>
+        </ul>
+      </section>
+
+      {/* Language Proficiency */}
+      <section className="mt-6">
+        <h2 className="font-bold text-lg border-b border-black mb-2">
+          Language Proficiency:
+        </h2>
+        <ul className="list-disc pl-5">
+          <li>Bengali: Fluent in reading, writing, speaking</li>
+          <li>English: Good in reading, writing, speaking</li>
+        </ul>
+      </section>
+
+      {/* Personal Information */}
+      <section className="mt-6">
+        <h2 className="font-bold text-lg border-b border-black mb-2">
+          Personal Information:
+        </h2>
+        <ul className="list-disc pl-5">
+          <li>Full Name: MD. KAYESUR</li>
+          <li>Father’s Name: MD.Hafizur Rahman</li>
+          <li>Mother’s Name: Lutfunnesa Bagam</li>
           <li>
-            Manager of <strong>Monpura Cafe, Restaurant And Community Center</strong>.<br />
-            Bypass Road, Satkhira. (01-04-2024 to 01-08-2024)
+            Present Address: Vill: Khosalkhali, P.O: Kazamtala, P.S: Shyamnagar,
+            Dist: Satkhira
           </li>
-          <li>
-            Sales Executive Officer of <strong>Vai Vai Bastroloy</strong>, Garez Bazar, Shyamnagar, Satkhira.<br />
-            (10-06-2019 to 01-04-2024)
-          </li>
+          <li>Home District: Satkhira</li>
+          <li>Date of Birth: 16-06-2004</li>
+          <li>Marital Status: UnMarried</li>
+          <li>Nationality: Bangladeshi (By birth)</li>
+          <li>Blood Group: AB(+)</li>
         </ul>
       </section>
 
+      {/* Declaration */}
       <section className="mt-6">
-        <h2 className="font-bold text-lg border-b border-black mb-2">Computer Experience:</h2>
+        <h2 className="font-bold text-lg border-b border-black mb-2">
+          Declaration:
+        </h2>
         <p>
-          Computer fundamentals: Windows XP. Microsoft Office: MS Word, MS Access, MS PowerPoint.<br />
-          E-mail, Internet browsing, web searching, chatting.
+          I hereby declare that the information provided above is true and
+          correct to the best of my knowledge and belief.
         </p>
-      </section>
-
-      <section className="mt-6">
-        <h2 className="font-bold text-lg border-b border-black mb-2">Personal Information:</h2>
-        <ul className="list-disc pl-5">
-          <li><strong>Full Name:</strong> MD AL AMIN</li>
-          <li><strong>Father’s Name:</strong> Md Mijanur Rahman</li>
-          <li><strong>Mother’s Name:</strong> Khaleda Begum</li>
-          <li><strong>Present Address:</strong> Vill: Khosalkhali, P.O: Kadamtala, P.S: Shyamnagar, Dist: Satkhira.</li>
-          <li><strong>Permanent Address:</strong> Vill: Khosalkhali, P.O: Kadamtala, P.S: Shyamnagar, Dist: Satkhira.</li>
-          <li><strong>Home District:</strong> Satkhira</li>
-          <li><strong>Date of Birth:</strong> 16-06-2004</li>
-          <li><strong>Height:</strong> 5’ - 5”</li>
-          <li><strong>Weight:</strong> 52 kg</li>
-          <li><strong>Blood Group:</strong> O (+)</li>
-          <li><strong>Religious Belief:</strong> Islam</li>
-          <li><strong>Marital Status:</strong> Married</li>
-          <li><strong>Nationality:</strong> Bangladeshi (By birth)</li>
-          <li><strong>Birth Res:</strong> 20048718623025848</li>
-        </ul>
-      </section>
-
-      <section className="mt-6">
-        <h2 className="font-bold text-lg border-b border-black mb-2">Language Proficiency:</h2>
-        <ul className="list-disc pl-5">
-          <li>Bengali: Have good command in reading, writing, listening & speaking.</li>
-          <li>English: Have good command in reading, writing, listening & speaking.</li>
-        </ul>
-      </section>
-
-      <section className="mt-6">
-        <h2 className="font-bold text-lg border-b border-black mb-2">Reference:</h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          <div>
-            <p><strong>A) Md Mizanur Rahman</strong></p>
-            <p>Businessman,</p>
-            <p>Vai Vai Bastroloy,</p>
-            <p>Garez Bazar, Shyamnagar, Satkhira.</p>
-            <p>Mobile: 01933-565747</p>
-          </div>
-          <div>
-            <p><strong>B) Md Kamrul Islam</strong></p>
-            <p>Businessman,</p>
-            <p>Monpura Cafe,</p>
-            <p>Satkhira Sadar, Satkhira.</p>
-            <p>Mob: 01321-575544</p>
-          </div>
-        </div>
-      </section>
-
-      <section className="mt-6">
-        <h2 className="font-bold text-lg border-b border-black mb-2">Declaration:</h2>
-        <p>
-          I declare that the information above is true to the best of my knowledge. If required and where applicable,
-          these documents can be supported by appropriate authentic certificate/papers.
-        </p>
-        <div className="mt-4 text-right">
-          <p><strong>Date:</strong> 14/03/2025</p>
-          <p className="mt-6 font-bold">MD AL AMIN</p>
+        <div className="flex justify-between items-center mt-6 text-sm">
+          <p>
+            <strong>Date:</strong> 14/03/2025
+          </p>
+          <p className="font-bold">MD. KAYESUR</p>
         </div>
       </section>
     </div>
@@ -146,3 +159,4 @@ const CV = () => {
 };
 
 export default CV;
+

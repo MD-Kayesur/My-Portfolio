@@ -12,7 +12,7 @@ export default function SkillSection() {
   return (
     <div className="min-h-screen bg-[#1a1d52] text-white px-8 py-12 flex flex-col md:flex-row gap-8">
       <div className="md:w-1/2">
-        <h2 className="text-4xl font-bold mb-4">Skills</h2>
+        <h2 className="text-4xl font-bold mb-4 animated-gradient ">Skills</h2>
         <p className="text-sm mb-4">
           This is a sample text. Insert your desired text here. Insert your desired text here. This is a sample text.
         </p>

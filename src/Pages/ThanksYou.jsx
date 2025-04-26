@@ -5,7 +5,7 @@ const ThanksYou = () => {
   return (
     <div className="min-h-screen bg-[#0D1A43] text-white px-6 md:px-20 py-16 relative overflow-hidden">
       <div className="text-center mb-10">
-        <h2 className="text-4xl font-bold">THANK YOU</h2>
+        <h2 className="text-4xl font-bold animated-gradient">THANK YOU</h2>
         <p className="text-gray-300 mt-4">
           This is a sample text. Insert your desired text here. This is a sample text.
         </p>
@@ -19,7 +19,7 @@ const ThanksYou = () => {
           <FaGlobe className="text-white" />
           <div>
             <p>slidemodel.com</p>
-            <p>support@slidemodel.com</p>
+            <p>rmdkayesur@gemail.com</p>
           </div>
         </div>
 
@@ -33,8 +33,8 @@ const ThanksYou = () => {
         <div className="flex items-center gap-3 text-sm md:text-base">
           <FaPhoneAlt className="text-white" />
           <div>
-            <p>(999) 999-9999</p>
-            <p>(999) 999-9999</p>
+            <p>+880 1926360430</p>
+           
           </div>
         </div>
       </div>
