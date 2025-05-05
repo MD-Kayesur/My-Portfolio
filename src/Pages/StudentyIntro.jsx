@@ -92,13 +92,33 @@ const StudentyIntro = () => {
 
         {/* Image */}
         <div className="relative">
-          <div className="rounded-full bg-gradient-to-br from-yellow-400 to-purple-500 p-1">
+          {/* <div className="rounded-full bg-gradient-to-br from-yellow-400 to-purple-500 p-1">
             <img
               src={profilePic}
               alt="Profile"
               className="rounded-full w-60 h-60 object-cover"
             />
-          </div>
+          </div> */}
+          {/* Hidden SVG with clip path definition */}
+      <svg className="absolute -top-[999px] -left-[999px] w-0 h-0">
+        <defs>
+          <clipPath id="differentone18" clipPathUnits="objectBoundingBox">
+            <path
+              d="M0.5 0C0.367392 0 0.240215 0.0526784 0.146447 0.146447C0.0526784 0.240215 0 0.367392 0 0.5L0 1H0.5C0.632608 1 0.759785 0.947322 0.853553 0.853553C0.947322 0.759785 1 0.632608 1 0.5V0H0.5ZM0.5 0.75C0.433696 0.75 0.370107 0.723661 0.323223 0.676777C0.276339 0.629893 0.25 0.566304 0.25 0.5C0.25 0.433696 0.276339 0.370107 0.323223 0.323223C0.370107 0.276339 0.433696 0.25 0.5 0.25C0.566304 0.25 0.629893 0.276339 0.676777 0.323223C0.723661 0.370107 0.75 0.433696 0.75 0.5C0.75 0.566304 0.723661 0.629893 0.676777 0.676777C0.629893 0.723661 0.566304 0.75 0.5 0.75Z"
+              fill="black"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+      
+      {/* Image with clip path applied */}
+      <figure style={{ clipPath: 'url(#differentone18)' }} className="">
+        <img
+          src="your-image-url.jpg"
+          alt="Description"
+          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+        />
+      </figure>
         </div>
       </div>
     </div>

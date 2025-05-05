@@ -53,9 +53,9 @@ const Home = () => {
       <section>      <ThanksYou></ThanksYou></section>
 
  {/* <Copy></Copy> */}
-      <div className="mt-7">
+      {/* <div className="mt-7">
         <CV></CV>
-      </div>
+      </div> */}
                  
             
         </div>

@@ -6,7 +6,7 @@ import img from "../images/0b7fb41a-3019-4644-b657-c8f76a91b6f4.jpeg";
 const Navbar = () => {
   const navlink = (
     <>
-      <div className="font-semibold md:flex text-black md:text-white items-center">
+      <div className="font-semibold md:flex  text-black md:text-white  items-center">
         {/* <li>
           <Link
             to="top"
@@ -21,7 +21,7 @@ const Navbar = () => {
           </Link>
         </li> */}
 
-        <li>
+        <li className="inline-block">
           <Link
             to="Intro"
             smooth={true}
@@ -35,7 +35,7 @@ const Navbar = () => {
           </Link>
         </li>
 
-        <li>
+        <li className="inline-block">
           <Link
             to="About"
             smooth={true}
@@ -48,7 +48,7 @@ const Navbar = () => {
               className=" rounded-md transition-all duration-300 active:bg-red-500"></Button>
           </Link>
         </li>
-        <li>
+        <li className="inline-block">
           <Link
             to="Skill"
             smooth={true}
@@ -61,7 +61,7 @@ const Navbar = () => {
               className=" rounded-md transition-all duration-300 active:bg-red-500"></Button>
           </Link>
         </li>
-        <li>
+        <li className="inline-block">
           <Link
             to="Projects"
             smooth={true}
@@ -74,7 +74,7 @@ const Navbar = () => {
               className="rounded-md transition-all duration-300 active:bg-red-500"></Button>
           </Link>
         </li>
-        <li>
+        <li className="inline-block">
           <Link
             to="casestudy"
             smooth={true}
@@ -112,7 +112,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content   rounded-box z-1 mt-3 w-52 p-2 shadow">
+            className="menu menu-sm dropdown-content   rounded-box z-1 mt-3 w-40 p-2 shadow">
             {navlink}
           </ul>
         </div>
