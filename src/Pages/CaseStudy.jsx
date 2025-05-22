@@ -1,6 +1,12 @@
 import React from "react";
 import img from '../images/0b7fb41a-3019-4644-b657-c8f76a91b6f4.jpeg'
  const CaseStudy = () => {
+
+  const action=[
+    {Name:'HSC', Collage:'Munshigang Degree Collage'},
+    {Name:'SSC', Collage:'Abad-Chandipur Secondery High School'},
+    
+  ]
   return (
     <div  className="min-h-screen bg-[#0D1A43] text-white py-16 px-6 md:px-20 relative overflow-hidden">
       <h2 className="text-4xl font-bold mb-12 text-white animated-gradient">Case Study</h2>
@@ -23,14 +29,14 @@ import img from '../images/0b7fb41a-3019-4644-b657-c8f76a91b6f4.jpeg'
 
         {/* Horizontal Lines + Text */}
         <div className="flex flex-col gap-16 z-10 ml-6">
-          {["Placeholder", "Placeholder", "Placeholder"].map((title, index) => (
+          { action.map((title, index) => (
             <div key={index} className="flex items-center gap-6">
               {/* Horizontal green line */}
               <div className="w-12 h-[1px] bg-green-400"></div>
               <div>
-                <h4 className="font-bold">{title}</h4>
+                <h4 className="font-bold">{title.Name}</h4>
                 <p className="text-gray-300">
-                  This is a sample text. Insert your desired text here.
+                  { title.Collage}
                 </p>
               </div>
             </div>

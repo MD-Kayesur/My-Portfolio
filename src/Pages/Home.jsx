@@ -24,7 +24,7 @@ import { Copy } from "lucide-react";
 const Home = () => {
     return (
         <div id="top" > 
-             <div className="text-5xl font-bold  z-50   fixed bottom-10 right-20 text-red-400"> 
+             <div className="text-5xl font-bold  z-50   fixed bottom-20 right-20 text-red-400"> 
                 
             
           <Link
@@ -33,6 +33,7 @@ const Home = () => {
             duration={500}
             offset={-70}
             spy={true}
+            
             activeClass="active">
             <Button
               button="Go Top"

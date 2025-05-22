@@ -9,7 +9,7 @@ import { useScatter } from "../Hook/useScatter";
 
 const sections = [
   { title: "Personal Profile", description: "I am always eager to learn new technologies, solve problems efficiently, and collaborate with teams to build scalable and meaningful software. Currently seeking an opportunity to grow my career in a challenging and dynamic IT environment." },
-  { title: "Skills", description: "Skilled in building responsive web applications using React, Tailwind CSS, and JavaScript." },
+  { title: "Skills", description: "Skilled in building responsive web applications using React, Tailwind CSS, and JavaScript,Forebase authentication , Express.Js,Database,Node.Js" },
   { title: "Hobbies", description: "I enjoy solving coding challenges, exploring new technologies, and creating user-friendly web interfaces in my free time." },
   { title: "Education", description: "Completed a Bachelor’s degree in Computer Science, building a solid foundation in programming, data structures, and software development.." },
   { title: "Achievements", description: "Built and deployed multiple personal projects using React and Firebase, demonstrating practical frontend and backend development skills." },

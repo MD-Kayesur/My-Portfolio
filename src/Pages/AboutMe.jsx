@@ -32,7 +32,7 @@ import myImage from "../images/0b7fb41a-3019-4644-b657-c8f76a91b6f4.jpeg"; // Yo
           <h2 className="text-4xl font-bold mb-6 animated-gradient ">About Me</h2>
           <p className="text-white mt-3 leading-relaxed">
     Currently looking for a position in the <span className="font-bold text-yellow-400">IT industry</span> where I can apply my knowledge, learn from real-world experience, and grow as a developer. I'm also continuously learning modern frameworks and tools like 
-    <span className="font-medium"> Next.js, Firebase, and Git</span>.
+    <span className="font-medium"> React.js, Next.js, Firebase, Git, MongoDB, Express.js, Node.js etc</span>.
   </p>
            
         </div>

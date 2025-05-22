@@ -22,7 +22,7 @@ const StudentyIntro = () => {
   // console.log(scattered)
   useEffect(() => {
     typed.current = new Typed(el.current, {
-      strings: ["FrontEnd Developer", "Youtuber", "Crazy Boy"],
+      strings: ["FrontEnd Developer", "Web Designer", "MERN Stack Developer"],
       typeSpeed: 100,
       backSpeed: 50,
       loop: true,
@@ -65,7 +65,7 @@ const StudentyIntro = () => {
            {/* Front-End Developer | Freelancer */}
           <div className="flex items-center gap-3">
             <a
-              href="../../public/MD.CV.docx"
+              href="/CURRICULUM VITAE.docx"
               download="My_Resume.docx"
               className="">
              <button className="btn btn-info"> Download CV</button>
@@ -100,11 +100,11 @@ const StudentyIntro = () => {
             />
           </div> */}
           {/* Hidden SVG with clip path definition */}
-      <svg className="absolute -top-[999px] -left-[999px] w-0 h-0">
+      <svg className="absolute -top-[999px] -left-[999px] w-0 h-0 -z-30">
         <defs>
           <clipPath id="differentone18" clipPathUnits="objectBoundingBox">
             <path
-              d="M0.5 0C0.367392 0 0.240215 0.0526784 0.146447 0.146447C0.0526784 0.240215 0 0.367392 0 0.5L0 1H0.5C0.632608 1 0.759785 0.947322 0.853553 0.853553C0.947322 0.759785 1 0.632608 1 0.5V0H0.5ZM0.5 0.75C0.433696 0.75 0.370107 0.723661 0.323223 0.676777C0.276339 0.629893 0.25 0.566304 0.25 0.5C0.25 0.433696 0.276339 0.370107 0.323223 0.323223C0.370107 0.276339 0.433696 0.25 0.5 0.25C0.566304 0.25 0.629893 0.276339 0.676777 0.323223C0.723661 0.370107 0.75 0.433696 0.75 0.5C0.75 0.566304 0.723661 0.629893 0.676777 0.676777C0.629893 0.723661 0.566304 0.75 0.5 0.75Z"
+              d="M0.5 0C0.367392 0 0.240215 0.0526784 0.146447 0.146447C0.0526784 0.240215 0 0.367392 0 0.5L0 1H0.5C0.632608 1 0.759785 0.947322 0.853553 0.853553C0.947322 0.759785 1 0.632608 1 0.5V0H0.5ZM0.5 0.75C0.433696 0.75 0.370107 0.723661 0.323223      "
               fill="black"
             />
           </clipPath>
@@ -114,12 +114,15 @@ const StudentyIntro = () => {
       {/* Image with clip path applied */}
       <figure style={{ clipPath: 'url(#differentone18)' }} className="">
         <img
-          src="your-image-url.jpg"
+          src={profilePic}
+          // src="your-image-url.jpg"
           alt="Description"
-          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105 z-50"
         />
       </figure>
+  
         </div>
+        
       </div>
     </div>
   );

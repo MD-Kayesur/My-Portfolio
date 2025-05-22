@@ -48,7 +48,7 @@ const MainLayout = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <div className="min-h-[200px] py-20 w-11/12 mx-auto ">
+            <div className="min-h-[200px] pt-20 w-11/12 mx-auto ">
                  <Outlet></Outlet>
              </div>
         </div>
