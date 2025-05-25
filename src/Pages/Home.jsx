@@ -36,7 +36,7 @@ const Home = () => {
             
             activeClass="active">
             <Button
-              button="Go Top"
+              button="Go Top" className="fixed bottom-4 right-4 z-50"
                
                > </Button>
           </Link>

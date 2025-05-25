@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react"; //useState: Burst ইফে
 // useRef: interval ধরে রাখতে যাতে মাউস চেপে রাখলে বারবার burst হয়।
 
 import { motion, AnimatePresence } from "framer-motion";
-import rainbowImage from "../images/0b7fb41a-3019-4644-b657-c8f76a91b6f4.jpeg";
+import rainbowImage from "../images/WhatsApp Image 2025-05-24 at 21.16.27_18f75475.jpg";
 
 const MouseBurst = () => {
   // এখানে আমরা burst গুলোর ডেটা রাখছি। প্রতিটি ক্লিক বা ইফেক্ট হচ্ছে একটা object — যেখানে x, y পজিশন এবং unique id থাকে।

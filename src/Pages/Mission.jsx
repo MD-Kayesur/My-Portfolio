@@ -119,7 +119,7 @@ const projects = [
   },
   {
     title: "Game_Spot",
-    img: "https://i.ibb.co.com/BHB5Sk33/screencapture-car.png",
+    img: "https://i.ibb.co/j98RJryT/gamespot.png",
     description:
       "Game_Spot is a dynamic and engaging platform dedicated to all things related to video games. Whether you’re a casual gamer or a hardcore enthusiast, Game_Spot offers a wide variety of content tailored to meet your gaming interests.",
     tech: [
