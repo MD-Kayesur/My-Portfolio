@@ -23,7 +23,7 @@ export default function SkillSection() {
          
       </div>
 
-      <div className="md:w-1/2 space-y-6">
+      <div className="md:w-1/2 w-full space-y-6">
         {skills.map((skill, index) => (
           <div key={index}>
             <div className="flex justify-between mb-1">
