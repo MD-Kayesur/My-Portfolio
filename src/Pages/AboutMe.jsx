@@ -1,5 +1,5 @@
 import React from "react";
-import myImage from "../images/0b7fb41a-3019-4644-b657-c8f76a91b6f4.jpeg"; // Your image path
+import myImage from "../images/WhatsApp Image 2025-05-24 at 21.16.27_18f75475.jpg"; // Your image path
   const AboutMe = () => {
   return (
     <div     className="min-h-screen bg-[#0D1A43] text-white py-16 px-6 md:px-20 relative overflow-hidden">
