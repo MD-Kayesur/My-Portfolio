@@ -1,5 +1,5 @@
 import React from "react";
-import img from '../images/0b7fb41a-3019-4644-b657-c8f76a91b6f4.jpeg'
+import img from '../images/WhatsApp Image 2025-05-24 at 21.16.27_18f75475.jpg'
  const CaseStudy = () => {
 
   const action=[
@@ -25,7 +25,7 @@ import img from '../images/0b7fb41a-3019-4644-b657-c8f76a91b6f4.jpeg'
         </div>
 
         {/* Vertical Green Line */}
-        <div className="absolute left-[10%] bottom-[3%]  md:left-[38%] h-[300px] w-[1px] bg-green-400 z-0"></div>
+        <div className="absolute left-[10%] bottom-[3%]  md:left-[35%] h-[300px] w-[1px] bg-green-400 z-0"></div>
 
         {/* Horizontal Lines + Text */}
         <div className="flex flex-col gap-16 z-10 ml-6">

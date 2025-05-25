@@ -1,7 +1,9 @@
 // src/components/StudentyIntro.jsx
 
 import React, { useEffect, useRef } from "react";
-import profilePic from "../images/0b7fb41a-3019-4644-b657-c8f76a91b6f4.jpeg"; // Replace with your actual image
+import { easeInOut } from "motion"
+import {motion } from "motion/react"
+import profilePic from "../images/WhatsApp Image 2025-05-24 at 21.16.27_18f75475.jpg"; // Replace with your actual image
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { Button, Link } from "react-scroll";
 import Typed from "typed.js";
@@ -40,10 +42,18 @@ const StudentyIntro = () => {
         {/* Text Area */}
         <div className="space-y-4">
          <div>
-         <h1 className="text-4xl md:text-5xl font-bold">
-            <span className="text-yellow-400">MD</span> <br />
-            <span className="text-white">KAYESUR</span>
+         <h1 className="text-6xl md:text-5xl font-bold">
+            <span className=" md:text-6xl text-5xl text-yellow-400">MD.</span> <br />
+            {/* <span className="text-white">KAYESUR</span> */}
           </h1>
+          <motion.h1 
+      animate={{x:[0,50,0]}}
+      transition={{ duration:2, delay:1 ,ease:easeInOut,repeat:Infinity }}
+      
+      className="md:text-7xl text-4xl font-bold">  <motion.span
+      animate={{color:['#FF5733','#33FF3C','#333CFF']}}
+      transition={{duration:5,delay:1, repeat:Infinity}}
+      >KAYESUR</motion.span>  </motion.h1>
          </div>
         
           {/* <div
@@ -59,14 +69,14 @@ const StudentyIntro = () => {
             user-friendly web applications using modern technologies, clean
             code, and best practices for seamless user experiences.
           </p>
-          <h2 className="text-2xl text-tomato-400 font-bold ">
-         i am  <span ref={el}></span> 
+          <h2 className="text-xl text-tomato-400 font-bold ">
+         i am  <span className="text-2xl" ref={el}></span> 
           </h2>
            {/* Front-End Developer | Freelancer */}
           <div className="flex items-center gap-3">
             <a
-              href="/CURRICULUM VITAE.docx"
-              download="My_Resume.docx"
+              href="../../public/MDkayesurResume.pdf"
+              download="My_Resume.pdf"
               className="">
              <button className="btn btn-info"> Download CV</button>
             </a>
@@ -112,15 +122,22 @@ const StudentyIntro = () => {
       </svg>
       
       {/* Image with clip path applied */}
-      <figure style={{ clipPath: 'url(#differentone18)' }} className="">
+      {/* <figure style={{ clipPath: 'url(#differentone18)' }} className="">
         <img
           src={profilePic}
           // src="your-image-url.jpg"
           alt="Description"
           className="w-full h-full object-cover transition-transform duration-300 hover:scale-105 z-50"
         />
-      </figure>
-  
+      </figure> */}
+
+<figure style={{ clipPath: 'url(#differentone18)' }} className="">
+<motion.img
+     animate={{y:[0,50,0]}}
+     transition={{duration:5,delay:1 ,ease:easeInOut,repeat:Infinity}}
+      src={profilePic} 
+     className="max-w-sm w-60 rounded-br-[40px] border-l-4 border-b-4  rounded-t-[40px] shadow-2xl hover:scale-105 z-50" />
+  </figure>
         </div>
         
       </div>
